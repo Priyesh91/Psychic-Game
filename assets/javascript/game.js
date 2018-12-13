@@ -14,11 +14,12 @@ var computerChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"
 //create variables for wins/losses/guessesleft/your guesses soo far
 var wins = 0;
 var losses = 0;
-var guessesleft = 0;
+var guessesleft = 10;
 
 //create variables that hold references to the places in the HTML where things are displayed
 var userChoiceText = document.getElementById("userchoice-text");
 var computerChoiceText = document.getElementById("userchoice - text");
+var guessesLeftText = document.getElementById("guesses-left");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var yourGuesses = document.getElementById("your-guesses");
@@ -31,7 +32,7 @@ var userChoice = event.key.toLowerCase();
 
 
 //registers key pressed in console
-var userpick = console.log(userChoice);
+console.log(userChoice);
 
 
 
@@ -39,23 +40,34 @@ var userpick = console.log(userChoice);
 var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
 console.log(computerGuess);
 
-if(userpick === computerGuess) {
-  alert("it worked!");
+//matching to see if key pressed matches the computer guess if correct player wins if wrong player looses guess and after 10 guesses a loss is registered on html page
+
+if(userChoice !== computerGuess) {
+ guessesleft--;
 }
-//matching to see if key matches the computer guess if correct player wins if wrong player looses guess and after 10 guesses a loss is registered on html page
-
-
-
-
-
-
+else if (guessesleft = 0) {
+  alert("You Loose!");
+  losses++;
+  guessesleft = 10;
+}
+ else if (userChoice === computerGuess) {
+wins++;
+guessesleft = 10;
+}
 
 //displaying on which key is pressed and registering it on page
-
+userChoiceText.textContent = "You chose: " + userChoice;
+// computerChoiceText.textContent = "The computer chose: " + computerGuess;
+guessesLeftText.textContent = "Guesses Left: " + guessesleft;
+winsText.textContent = "Wins: " + wins;
+lossesText.textContent = "Losses: " + losses;
+yourGuesses.textContent = "Your Guesses: " + userChoice;
 
 }
 
-
+// how do I record key strokes with .write function?
+// how do i reset the guesses?
+// how do i reset recorded key storkes?
 
 
 
