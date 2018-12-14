@@ -48,8 +48,8 @@ document.onkeyup = function (event) {
     wins++;
     guessesleft = 10;
     computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-    
     console.log(computerGuess);
+    guesses = [];
   }
 
   //when you run out of guesses alert you loose, +1 to loss value, reset guess left and computerchoice
@@ -59,6 +59,7 @@ document.onkeyup = function (event) {
     guessesleft = 10;
     computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
     console.log(computerGuess);
+    guesses = [];
   }
 
   //displaying on which key is pressed and registering it on page
@@ -72,8 +73,7 @@ document.onkeyup = function (event) {
   currentguesses.textContent = "Your Guesses: " + guesses;
 };
 
-function resetguesses () [
-]
+
 
 
 // $("#clear").on("click", function () {
