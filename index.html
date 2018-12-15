@@ -14,40 +14,42 @@
 </head>
 
 <body>
-  <div class="container my-5 border text-center">
+  <div class="container  my-5 text-center outerbody">
     <!-- title row -->
-    <div class="row">
-      <div class="container text-center col" id="title-text">
-        Psychic-Game
+    <div class="container">
+      <div class="row">
+        <div class=" container  text-center col" id="title-text">
+          Psychic-Game
+        </div>
       </div>
-    </div>
-    <!-- directions row -->
-    <div class="row">
-      <div class="container text-center col-12">
-        <p id="directions-text">Guess what letter I'm thinking of (A-Z)</p>
+      <!-- directions row -->
+      <div class="row">
+        <div class="container text-center col-12">
+          <p class="text-center" id="directions-text">Guess what letter I'm thinking of (A-Z)</p>
+        </div>
       </div>
     </div>
 
     <!-- wins/yourguesses/losses row -->
     <div class="row">
       <!-- wins col -->
-      <div class="container col-3 border" id="wins-section">
+      <div class="container col-3 border winner-box" id="wins-section">
         <div class="row">
           <div class="container col">
-            <p class="w-l-text text-center">
+            <p class="w-l-text text-center pt-3 pb-0  ">
               WINS
             </p>
           </div>
         </div>
         <div class="row">
-          <div class="container col text-center" id="wins-text">
+          <div class="container col text-center pt-0 mt-0" id="wins-text">
           </div>
         </div>
       </div>
 
 
       <!-- your guess col -->
-      <div class="container col-6 border" id="guesses-section">
+      <div class="container border col-6" id="guesses-section">
         <div class="row">
           <div class="container col">
             <p class="guesses-text text-center">
@@ -56,8 +58,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="container col text-center" id="userchoice-text">
-
+          <div class="container letterguessed">
+            <p class="p p text-center" id="userchoice-text">
+            </p>
           </div>
         </div>
         <!-- guesses left row -->
@@ -79,11 +82,11 @@
 
 
       <!-- losses col -->
-      <div class="container col-3 border" id="losses-section">
+      <div class="container col-3 border  w-l-box" id="losses-section">
         <!-- your guess row -->
         <div class="row">
           <div class="container col">
-            <p class="w-l-text text-center">
+            <p class="w-l-text text-center pt-3">
               LOSSES
             </p>
           </div>

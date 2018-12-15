@@ -32,7 +32,7 @@ console.log(computerGuess);
 document.onkeyup = function (event) {
 
   //determining which key is pressed
-  var userChoice = event.key.toLowerCase();
+  var userChoice = event.key.toUpperCase();
   // console.log(typeof currentguesses);
   guesses.push(userChoice);
   console.log(currentguesses);

@@ -1,52 +1,72 @@
+* {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+}
+
 #title-text {
-  color:rgb(142, 58, 211);
-  font-size: 120px;
+  color: rgb(142, 58, 211);
+  font-size: 100px;
   font-weight: bold;
 }
 
 #directions-text {
-  color:rgb(99, 62, 129);
-  font-size: 25px;
+  color: rgb(99, 62, 129);
+  font-size: 20px;
   font-weight: bold;
 }
 
 .w-l-text {
   color: rgba(82, 92, 236, 0.932);
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
+}
+
+.winner-box {
+  border-color: rgb(52, 167, 17);
+  border-width: 10px;
 }
 
 .guesses-text {
   color: rgba(13, 139, 118, 0.884);
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
+  line-height: 100px;
 }
 
 #wins-section {
+  margin-top: 100px;
   height: 300px;
 }
 
 #guesses-section {
-  height: 300px;
+  height: 600px;
 }
 
 #losses-section {
+  margin-top: 100px;
   height: 300px;
 }
 
 .guesses-left-text {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
-  color: purple;
+  color: rgb(36, 40, 235);
 }
-.incorrect-guesses-text{
-  color: red;
+
+.incorrect-guesses-text {
+  color: rgb(235, 93, 11);
+  font-weight: bold;
+  font-size: 40px;
 }
- #wins-text {
-   color: rgb(52, 167, 17);
-   font-size: 100px;
-   font-weight: bold;
- }
+
+#wins-text {
+  color: rgb(52, 167, 17);
+  font-size: 100px;
+  font-weight: bold;
+}
 
 #losses-text {
   color: rgb(206, 11, 11);
@@ -55,6 +75,7 @@
 }
 
 #userchoice-text {
-  font-size:60px;
-  
+  font-size: 250px;
+  line-height: 275px;
+  color: rgb(235, 93, 11);
 }
