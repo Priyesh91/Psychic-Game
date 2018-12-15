@@ -1,8 +1,60 @@
-h1 {
-  color: red;
-  }
+#title-text {
+  color:rgb(142, 58, 211);
+  font-size: 120px;
+  font-weight: bold;
+}
 
-  .fancy {
-    font-size: 100px;
-    color: purple;
-  }
+#directions-text {
+  color:rgb(99, 62, 129);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.w-l-text {
+  color: rgba(82, 92, 236, 0.932);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.guesses-text {
+  color: rgba(13, 139, 118, 0.884);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#wins-section {
+  height: 300px;
+}
+
+#guesses-section {
+  height: 300px;
+}
+
+#losses-section {
+  height: 300px;
+}
+
+.guesses-left-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: purple;
+}
+.incorrect-guesses-text{
+  color: red;
+}
+ #wins-text {
+   color: rgb(52, 167, 17);
+   font-size: 100px;
+   font-weight: bold;
+ }
+
+#losses-text {
+  color: rgb(206, 11, 11);
+  font-size: 100px;
+  font-weight: bold;
+}
+
+#userchoice-text {
+  font-size:60px;
+  
+}

@@ -19,7 +19,7 @@ var guesses = [];
 
 //create variables that hold references to the places in the HTML where things are displayed
 var userChoiceText = document.getElementById("userchoice-text");
-var computerChoiceText = document.getElementById("userchoice - text");
+var computerChoiceText = document.getElementById("userchoice-text");
 var guessesLeftText = document.getElementById("guesses-left");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
@@ -63,33 +63,12 @@ document.onkeyup = function (event) {
   }
 
   //displaying on which key is pressed and registering it on page
-  userChoiceText.textContent = "You chose: " + userChoice;
-  userChoiceText.setAttribute("class", "fancy");
+  userChoiceText.textContent = userChoice;
+  // userChoiceText.setAttribute("class", "fancy");
 
   // computerChoiceText.textContent = "The computer chose: " + computerGuess;
-  guessesLeftText.textContent = "Guesses Left: " + guessesleft;
-  winsText.textContent = "Wins: " + wins;
-  lossesText.textContent = "Losses: " + losses;
-  currentguesses.textContent = "Your Guesses: " + guesses;
+  guessesLeftText.textContent = guessesleft;
+  winsText.textContent = wins;
+  lossesText.textContent = losses;
+  currentguesses.textContent = guesses;
 };
-
-
-
-
-// $("#clear").on("click", function () {
-//       $("#display").empty();
-// how do I record key strokes with .write function?
-// how do i reset the guesses?
-// how do i reset recorded key storkes?
-
-
-
-
-
-
-
-
-//testing to see if keyup function works with one key
-// if (userChoice === "a") {
-//   alert("a is pressed");
-// }
